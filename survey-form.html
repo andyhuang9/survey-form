@@ -17,11 +17,11 @@
 			<input type="number" name="age" id="age" min="0" max="125" placeholder="Enter age here" required />
 		</div>
 		<div>
-			<label id="years-label">How many years have you been skiing?</label>
+			<p>How many years have you been skiing?</p>
 			<input type="number" name="years" id="years" min="0" max="125" placeholder="Enter years here" required />
 		</div>
 		<div>
-			<label id="skill-label">What option best describes your current skill level?</label>
+			<p id="skill-label">What option best describes your current skill level?</p>
 			<select id="skill" name="skill" required>
 				<option disabled selected value>Select current skill level</option>
 				<option value="beginner">Beginner</option>
@@ -29,6 +29,12 @@
 				<option value="advanced">Advanced</option>
 				<option value="competitive">Competitive</option>
 			</select>
+		</div>
+		<div>
+			<p>Would you recommend skiing to a friend?</p>
+			<label><input name="user-recommend" value="yes" type="radio" checked>Yes</label>
+			<label><input name="user-recommend" value="maybe" type="radio">Maybe</label>
+			<label><input name="user-recommend" value="no" type="radio">No</label>
 		</div>
 	</form>
 </div>
