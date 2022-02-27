@@ -21,7 +21,7 @@
 			<input type="number" name="years" id="years" min="0" max="125" placeholder="Enter years here" required />
 		</div>
 		<div>
-			<p id="skill-label">What option best describes your current skill level?</p>
+			<p>What option best describes your current skill level?</p>
 			<select id="skill" name="skill" required>
 				<option disabled selected value>Select current skill level</option>
 				<option value="beginner">Beginner</option>
@@ -31,10 +31,27 @@
 			</select>
 		</div>
 		<div>
+			<p>
+				What equipment do you own?<span>(Check all that apply)</span>
+			</p>
+			<label><input name="owned" value="helmet" type="checkbox"/>Helmet</label>
+			<label><input name="owned" value="goggles" type="checkbox"/>Goggles</label>
+			<label><input name="owned" value="skis" type="checkbox"/>Skis</label>
+			<label><input name="owned" value="boots" type="checkbox"/>Ski Boots</label>
+			<label><input name="owned" value="poles" type="checkbox"/>Ski Poles</label>
+		</div>
+		<div>
 			<p>Would you recommend skiing to a friend?</p>
 			<label><input name="user-recommend" value="yes" type="radio" checked>Yes</label>
 			<label><input name="user-recommend" value="maybe" type="radio">Maybe</label>
 			<label><input name="user-recommend" value="no" type="radio">No</label>
+		</div>
+		<div>
+			<p>Anything you would like to tell us about your skiing experiences?</p>
+			<textarea id="thoughts" name="thoughts" placeholder="Enter your thoughts here..."></textarea>
+		  </div>
+		<div>
+			<button type="submit" id="submit">Submit</button>
 		</div>
 	</form>
 </div>
