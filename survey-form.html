@@ -3,31 +3,59 @@
 	<head>
 		<link rel="stylesheet" href="style.css">
 	</head>
-	<div>
-		<header>
-			<h1 id="title">Skiing Survey</h1>
-			<p id="description">Thank you for taking the time to complete this short survey</p>
+	<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">Skiing Survey</h1>
+			<p id="description" class="description text-center">Thank you for taking the time to complete this short survey</p>
 		</header>
 		<form id="survey-form">
 			<div class="form-group">
 				<label id="name-label">Name</label>
-				<input type="text" name="name" id="name" placeholder="Enter name here" required />
+				<input 
+					type="text" 
+					name="name" 
+					id="name" 
+					class="form-control" 
+					placeholder="Enter name here" 
+					required />
 			</div>
 			<div class="form-group">
 				<label id="email-label">Email</label>
-				<input type="email" name="email" id="email" placeholder="Enter email here" required />
+				<input 
+					type="email" 
+					name="email" 
+					id="email" 
+					class="form-control" 
+					placeholder="Enter email here" 
+					required />
 			</div>
 			<div class="form-group">
 				<label id="age-label">Age</label>
-				<input type="number" name="age" id="age" min="0" max="125" placeholder="Enter age here" required />
+				<input 
+					type="number" 
+					name="age" 
+					id="age" 
+					class="form-control" 
+					min="0" 
+					max="125" 
+					placeholder="Enter age here" 
+					required />
 			</div>
-			<div>
+			<div class="form-group">
 				<p>How many years have you been skiing?</p>
-				<input type="number" name="years" id="years" min="0" max="125" placeholder="Enter years here" required />
+				<input 
+					type="number" 
+					name="years" 
+					id="years" 
+					class="form-control" 
+					min="0" 
+					max="125" 
+					placeholder="Enter years here" 
+					required />
 			</div>
-			<div>
+			<div class="form-group">
 				<p>What option best describes your current skill level?</p>
-				<select id="skill" name="skill" required>
+				<select id="skill" class="form-control" name="skill" required>
 					<option disabled selected value>Select current skill level</option>
 					<option value="beginner">Beginner</option>
 					<option value="intermediate">Intermediate</option>
@@ -35,28 +63,33 @@
 					<option value="competitive">Competitive</option>
 				</select>
 			</div>
-			<div>
+			<div class="form-group">
 				<p>
-					What equipment do you own?<span>(Check all that apply)</span>
+					What equipment do you own?<span class="clue">(Check all that apply)</span>
 				</p>
-				<label><input name="owned" value="helmet" type="checkbox"/>Helmet</label>
-				<label><input name="owned" value="goggles" type="checkbox"/>Goggles</label>
-				<label><input name="owned" value="skis" type="checkbox"/>Skis</label>
-				<label><input name="owned" value="boots" type="checkbox"/>Ski Boots</label>
-				<label><input name="owned" value="poles" type="checkbox"/>Ski Poles</label>
+				<label><input name="owned" value="helmet" type="checkbox" class="input-checkbox" />Helmet</label>
+				<label><input name="owned" value="goggles" type="checkbox" class="input-checkbox" />Goggles</label>
+				<label><input name="owned" value="skis" type="checkbox" class="input-checkbox" />Skis</label>
+				<label><input name="owned" value="boots" type="checkbox" class="input-checkbox" />Ski Boots</label>
+				<label><input name="owned" value="poles" type="checkbox" class="input-checkbox" />Ski Poles</label>
 			</div>
-			<div>
+			<div class="form-group">
 				<p>Would you recommend skiing to a friend?</p>
-				<label><input name="user-recommend" value="yes" type="radio" checked>Yes</label>
-				<label><input name="user-recommend" value="maybe" type="radio">Maybe</label>
-				<label><input name="user-recommend" value="no" type="radio">No</label>
+				<label><input name="user-recommend" value="yes" type="radio" class="input-radio" checked>Yes</label>
+				<label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+				<label><input name="user-recommend" value="no" type="radio" class="input-radio" >No</label>
 			</div>
-			<div>
+			<div class="form-group">
 				<p>Anything you would like to tell us about your skiing experiences?</p>
-				<textarea id="thoughts" name="thoughts" placeholder="Enter your thoughts here..."></textarea>
+				<textarea 
+					id="thoughts" 
+					class="input-textarea" 
+					name="thoughts" 
+					placeholder="Enter your thoughts here...">
+				</textarea>
 			  </div>
-			<div>
-				<button type="submit" id="submit">Submit</button>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
 			</div>
 		</form>
 	</div>
